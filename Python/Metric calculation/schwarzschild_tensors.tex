@@ -1,0 +1,43 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\setstretch{2}             
+\begin{document}
+\section*{Schwarzschild Tensor Calculations}
+\subsection*{Metric Tensor}
+$g_{\mu\nu} = \left[\begin{matrix}\frac{2 M}{r} - 1 & 0 & 0 & 0\\0 & \frac{1}{- \frac{2 M}{r} + 1} & 0 & 0\\0 & 0 & r^{2} & 0\\0 & 0 & 0 & r^{2} \sin^{2}{\left(\theta \right)}\end{matrix}\right]$
+
+\subsection*{Christoffel Symbols}
+$\Gamma^0_{01} = \frac{M}{r \left(- 2 M + r\right)}$\\
+$\Gamma^1_{00} = \frac{M \left(- 2 M + r\right)}{r^{3}}$\\
+$\Gamma^1_{11} = \frac{M}{r \left(2 M - r\right)}$\\
+$\Gamma^1_{22} = 2 M - r$\\
+$\Gamma^1_{33} = \left(2 M - r\right) \sin^{2}{\left(\theta \right)}$\\
+$\Gamma^2_{12} = \frac{1}{r}$\\
+$\Gamma^2_{33} = - \frac{\sin{\left(2 \theta \right)}}{2}$\\
+$\Gamma^3_{13} = \frac{1}{r}$\\
+$\Gamma^3_{23} = \frac{1}{\tan{\left(\theta \right)}}$\\
+\subsection*{Riemann Tensor}
+$R^0_{101} = \frac{2 M}{r^{2} \left(- 2 M + r\right)}$\\
+$R^0_{202} = - \frac{M}{r}$\\
+$R^0_{303} = - \frac{M \sin^{2}{\left(\theta \right)}}{r}$\\
+$R^1_{001} = \frac{2 M \left(- 2 M + r\right)}{r^{4}}$\\
+$R^1_{212} = - \frac{M}{r}$\\
+$R^1_{313} = - \frac{M \sin^{2}{\left(\theta \right)}}{r}$\\
+$R^2_{002} = \frac{M \left(2 M - r\right)}{r^{4}}$\\
+$R^2_{112} = \frac{M}{r^{2} \left(- 2 M + r\right)}$\\
+$R^2_{323} = \frac{2 M \sin^{2}{\left(\theta \right)}}{r}$\\
+$R^3_{003} = \frac{M \left(2 M - r\right)}{r^{4}}$\\
+$R^3_{113} = \frac{M}{r^{2} \left(- 2 M + r\right)}$\\
+$R^3_{223} = - \frac{2 M}{r}$\\
+\subsection*{Ricci Tensor}
+$R_{\mu\nu} = 0$\\
+\subsection*{Ricci Scalar}
+$R = 0$\\
+
+\subsection*{Einstein Tensor}
+$G_{\mu\nu} = 0$\\
+\end{document}
