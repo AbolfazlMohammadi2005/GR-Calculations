@@ -1,0 +1,56 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{setspace}
+
+\geometry{a4paper, margin=1in}
+\setstretch{1.5}
+
+\begin{document}
+\section*{Static Spherically Symmetric Space-Time}
+Metric:
+\[
+ds^2=-e^{2\Phi(r)}dt^2+e^{2\Lambda(r)}dr^2+r^2d\theta^2+r^2\sin^2\theta d\phi^2
+\]
+\subsection*{Metric Tensor}
+$g_{\mu\nu}=\left[\begin{matrix}- e^{2 \Phi{\left(r \right)}} & 0 & 0 & 0\\0 & e^{2 \left(\Lambda{\left(r \right)}\right)} & 0 & 0\\0 & 0 & r^{2} & 0\\0 & 0 & 0 & r^{2} \sin^{2}{\left(\theta \right)}\end{matrix}\right]$
+
+\subsection*{Christoffel Symbols}
+$\Gamma^0_{01}=\frac{d}{d r} \Phi{\left(r \right)}$\\
+$\Gamma^1_{00}=e^{- 2 \left(\Lambda{\left(r \right)}\right) + 2 \Phi{\left(r \right)}} \frac{d}{d r} \Phi{\left(r \right)}$\\
+$\Gamma^1_{11}=\frac{d}{d r} \left(\Lambda{\left(r \right)}\right)$\\
+$\Gamma^1_{22}=- r e^{- 2 \left(\Lambda{\left(r \right)}\right)}$\\
+$\Gamma^1_{33}=- r e^{- 2 \left(\Lambda{\left(r \right)}\right)} \sin^{2}{\left(\theta \right)}$\\
+$\Gamma^2_{12}=\frac{1}{r}$\\
+$\Gamma^2_{33}=- \frac{\sin{\left(2 \theta \right)}}{2}$\\
+$\Gamma^3_{13}=\frac{1}{r}$\\
+$\Gamma^3_{23}=\frac{1}{\tan{\left(\theta \right)}}$\\
+\subsection*{Riemann Curvature Tensor}
+$R^0_{101}=\frac{d}{d r} \left(\Lambda{\left(r \right)}\right) \frac{d}{d r} \Phi{\left(r \right)} - \left(\frac{d}{d r} \Phi{\left(r \right)}\right)^{2} - \frac{d^{2}}{d r^{2}} \Phi{\left(r \right)}$\\
+$R^0_{202}=- r e^{- 2 \left(\Lambda{\left(r \right)}\right)} \frac{d}{d r} \Phi{\left(r \right)}$\\
+$R^0_{303}=- r e^{- 2 \left(\Lambda{\left(r \right)}\right)} \sin^{2}{\left(\theta \right)} \frac{d}{d r} \Phi{\left(r \right)}$\\
+$R^1_{001}=\left(\frac{d}{d r} \left(\Lambda{\left(r \right)}\right) \frac{d}{d r} \Phi{\left(r \right)} - \left(\frac{d}{d r} \Phi{\left(r \right)}\right)^{2} - \frac{d^{2}}{d r^{2}} \Phi{\left(r \right)}\right) e^{- 2 \left(\Lambda{\left(r \right)}\right) + 2 \Phi{\left(r \right)}}$\\
+$R^1_{212}=r e^{- 2 \left(\Lambda{\left(r \right)}\right)} \frac{d}{d r} \left(\Lambda{\left(r \right)}\right)$\\
+$R^1_{313}=r e^{- 2 \left(\Lambda{\left(r \right)}\right)} \sin^{2}{\left(\theta \right)} \frac{d}{d r} \left(\Lambda{\left(r \right)}\right)$\\
+$R^2_{002}=- \frac{e^{- 2 \left(\Lambda{\left(r \right)}\right) + 2 \Phi{\left(r \right)}} \frac{d}{d r} \Phi{\left(r \right)}}{r}$\\
+$R^2_{112}=- \frac{\frac{d}{d r} \left(\Lambda{\left(r \right)}\right)}{r}$\\
+$R^2_{323}=\sin^{2}{\left(\theta \right)} - e^{- 2 \left(\Lambda{\left(r \right)}\right)} \sin^{2}{\left(\theta \right)}$\\
+$R^3_{003}=- \frac{e^{- 2 \left(\Lambda{\left(r \right)}\right) + 2 \Phi{\left(r \right)}} \frac{d}{d r} \Phi{\left(r \right)}}{r}$\\
+$R^3_{113}=- \frac{\frac{d}{d r} \left(\Lambda{\left(r \right)}\right)}{r}$\\
+$R^3_{223}=-1 + e^{- 2 \left(\Lambda{\left(r \right)}\right)}$\\
+\subsection*{Ricci Tensor}
+$R_{00} = \frac{\left(- r \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) \frac{d}{d r} \Phi{\left(r \right)} + r \left(\frac{d}{d r} \Phi{\left(r \right)}\right)^{2} + r \frac{d^{2}}{d r^{2}} \Phi{\left(r \right)} + 2 \frac{d}{d r} \Phi{\left(r \right)}\right) e^{- 2 \left(\Lambda{\left(r \right)}\right) + 2 \Phi{\left(r \right)}}}{r}$\\
+$R_{11} = \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) \frac{d}{d r} \Phi{\left(r \right)} - \left(\frac{d}{d r} \Phi{\left(r \right)}\right)^{2} - \frac{d^{2}}{d r^{2}} \Phi{\left(r \right)} + \frac{2 \frac{d}{d r} \left(\Lambda{\left(r \right)}\right)}{r}$\\
+$R_{22} = \left(r \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) - r \frac{d}{d r} \Phi{\left(r \right)} + e^{2 \left(\Lambda{\left(r \right)}\right)} - 1\right) e^{- 2 \left(\Lambda{\left(r \right)}\right)}$\\
+$R_{33} = \left(r \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) - r \frac{d}{d r} \Phi{\left(r \right)} + e^{2 \left(\Lambda{\left(r \right)}\right)} - 1\right) e^{- 2 \left(\Lambda{\left(r \right)}\right)} \sin^{2}{\left(\theta \right)}$\\
+\subsection*{Ricci Scalar}
+$R=\frac{2 \left(r^{2} \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) \frac{d}{d r} \Phi{\left(r \right)} - r^{2} \left(\frac{d}{d r} \Phi{\left(r \right)}\right)^{2} - r^{2} \frac{d^{2}}{d r^{2}} \Phi{\left(r \right)} + 2 r \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) - 2 r \frac{d}{d r} \Phi{\left(r \right)} + e^{2 \left(\Lambda{\left(r \right)}\right)} - 1\right) e^{- 2 \left(\Lambda{\left(r \right)}\right)}}{r^{2}}$\\
+
+\subsection*{Einstein Tensor}
+$G_{00} = \frac{\left(2 r \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) + e^{2 \left(\Lambda{\left(r \right)}\right)} - 1\right) e^{- 2 \left(\Lambda{\left(r \right)}\right) + 2 \Phi{\left(r \right)}}}{r^{2}}$\\
+$G_{11} = \frac{2 r \frac{d}{d r} \Phi{\left(r \right)} - e^{2 \left(\Lambda{\left(r \right)}\right)} + 1}{r^{2}}$\\
+$G_{22} = r \left(- r \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) \frac{d}{d r} \Phi{\left(r \right)} + r \left(\frac{d}{d r} \Phi{\left(r \right)}\right)^{2} + r \frac{d^{2}}{d r^{2}} \Phi{\left(r \right)} - \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) + \frac{d}{d r} \Phi{\left(r \right)}\right) e^{- 2 \left(\Lambda{\left(r \right)}\right)}$\\
+$G_{33} = r \left(- r \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) \frac{d}{d r} \Phi{\left(r \right)} + r \left(\frac{d}{d r} \Phi{\left(r \right)}\right)^{2} + r \frac{d^{2}}{d r^{2}} \Phi{\left(r \right)} - \frac{d}{d r} \left(\Lambda{\left(r \right)}\right) + \frac{d}{d r} \Phi{\left(r \right)}\right) e^{- 2 \left(\Lambda{\left(r \right)}\right)} \sin^{2}{\left(\theta \right)}$\\
+
+\end{document}
