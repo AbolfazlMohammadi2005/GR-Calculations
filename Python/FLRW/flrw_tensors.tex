@@ -1,0 +1,46 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\setstretch{2}             
+\begin{document}
+\section*{FLRW Tensor Calculations}
+\subsection*{Metric Tensor}
+$g_{\mu\nu} = \left[\begin{matrix}-1 & 0 & 0 & 0\\0 & a^{2}{\left(t \right)} & 0 & 0\\0 & 0 & a^{2}{\left(t \right)} & 0\\0 & 0 & 0 & a^{2}{\left(t \right)}\end{matrix}\right]$
+
+\subsection*{Christoffel Symbols}
+$\Gamma^0_{11} = a{\left(t \right)} \frac{d}{d t} a{\left(t \right)}$\\
+$\Gamma^0_{22} = a{\left(t \right)} \frac{d}{d t} a{\left(t \right)}$\\
+$\Gamma^0_{33} = a{\left(t \right)} \frac{d}{d t} a{\left(t \right)}$\\
+$\Gamma^1_{01} = \frac{\frac{d}{d t} a{\left(t \right)}}{a{\left(t \right)}}$\\
+$\Gamma^2_{02} = \frac{\frac{d}{d t} a{\left(t \right)}}{a{\left(t \right)}}$\\
+$\Gamma^3_{03} = \frac{\frac{d}{d t} a{\left(t \right)}}{a{\left(t \right)}}$\\
+\subsection*{Riemann Tensor}
+$R^0_{101} = a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)}$\\
+$R^0_{202} = a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)}$\\
+$R^0_{303} = a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)}$\\
+$R^1_{001} = \frac{\frac{d^{2}}{d t^{2}} a{\left(t \right)}}{a{\left(t \right)}}$\\
+$R^1_{212} = \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$R^1_{313} = \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$R^2_{002} = \frac{\frac{d^{2}}{d t^{2}} a{\left(t \right)}}{a{\left(t \right)}}$\\
+$R^2_{112} = - \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$R^2_{323} = \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$R^3_{003} = \frac{\frac{d^{2}}{d t^{2}} a{\left(t \right)}}{a{\left(t \right)}}$\\
+$R^3_{113} = - \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$R^3_{223} = - \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+\subsection*{Ricci Tensor}
+$R_{00} = - \frac{3 \frac{d^{2}}{d t^{2}} a{\left(t \right)}}{a{\left(t \right)}}$\\
+$R_{11} = a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} + 2 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$R_{22} = a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} + 2 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$R_{33} = a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} + 2 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+\subsection*{Ricci Scalar}
+$R = \frac{6 \left(a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} + \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}\right)}{a^{2}{\left(t \right)}}$\\
+
+\subsection*{Einstein Tensor}
+$G_{00} = \frac{3.0 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}}{a^{2}{\left(t \right)}}$\\
+$G_{11} = - 2.0 a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} - 1.0 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$G_{22} = - 2.0 a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} - 1.0 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+$G_{33} = - 2.0 a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} - 1.0 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}$\\
+\end{document}
